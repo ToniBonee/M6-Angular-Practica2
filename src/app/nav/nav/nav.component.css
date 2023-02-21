@@ -1,0 +1,19 @@
+p{
+    color: white;
+    margin-inline: 10px;
+    font-size: 40px;
+    background-color: #589750;
+    border: solid #1A380D 1px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+a{
+    text-decoration: none;
+}
+p:hover{
+    background-color: #589750 ;
+    color: #1A380D;
+    
+}

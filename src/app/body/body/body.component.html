@@ -1,0 +1,46 @@
+<main id="cesped" >
+    <div class="row" >
+        
+<div id="portada">
+    <div class="row" id="noche"  hidden >
+        <section class="col-6"> 
+        <h1>Buenas Noches</h1>
+        <h2>Duolingo viene a por ti a hacer clases de Bulgaro  </h2>
+    </section>
+        <section class="col-3">
+            <img src="https://media4.giphy.com/media/wH8aFVGkdmOjxBxR3I/giphy.gif?cid=6c09b952e147add9ef92f63c89f9d780260d65cd210928d4&rid=giphy.gif&ct=s">
+        </section>
+    </div>
+    
+    <div  class="row" id="dia" >
+        <section class="col-6"> 
+        <h1>Buenos dias</h1>
+        <h2>La caracol Marisol Te saluda</h2>
+    </section>
+        <section class="col-3">
+            <img src="https://media2.giphy.com/media/l17M5uvfc1VosGUUP0/giphy.gif">
+        </section>
+    </div>
+</div>
+        
+        <div class="col-5"></div>
+        <table id="tabla">
+            <div *ngFor="let unCaracol of listaCar;">
+                <div [ngSwitch]=unCaracol>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                      </tr>
+                    <tr>
+                      <td>{{ unCaracol.Num }}</td>
+                      <td>{{ unCaracol.Nom }}</td>
+                      
+                    </tr>
+                </div>
+              </div>
+            
+        </table>
+    </div>
+    
+        
+</main>
